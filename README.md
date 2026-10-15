@@ -21,7 +21,7 @@ Este repositório documenta a implementação de políticas de Conditional Acces
 
 Esta política é projetada para remediar o risco de usuários cujas credenciais podem ter sido vazadas ou comprometidas (User Risk).
 
-*   **Target:** Todos os usuários (`All users`).
+*   **Target:** Todos os usuários (`All users`).  (Excluindo contas Break-Glass).
 *   **Target Resources:** Todos os aplicativos em nuvem (`All cloud apps`).
 *   **Conditions:**
     *   **User Risk:** High.
