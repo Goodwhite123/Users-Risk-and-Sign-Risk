@@ -37,8 +37,11 @@ Esta política é projetada para remediar o risco de usuários cujas credenciais
 
 *   **Exemplo de Configuração Esperada:**
 *   **Assignments:** All users / All cloud apps. (Excluindo contas Break-Glass).
+
     *   **Conditions:** Sign-in Risk: High.
+
     *   **Access Controls (Grant):** Block access.
+
     *   **State:** Report-only.
 
 ## 🛠️ Tecnologias Utilizadas
