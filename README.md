@@ -38,7 +38,6 @@ Esta política atua em tempo real contra tentativas de login anômalas ou vindas
 ## 🛠️ Tecnologias Utilizadas
 
 *   Microsoft Entra ID (Azure AD)
-*   Microsoft Entra ID Protection (P2)
 *   Conditional Access Policies
 *   MFA Authentication Strengths
 
