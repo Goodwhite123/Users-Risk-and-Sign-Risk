@@ -40,7 +40,7 @@ Esta política é projetada para remediar o risco de usuários cujas credenciais
 *   
     **Access Controls (Grant):** `Block access`
 *   **Session Controls:**
-    *   `Sign-in frequency:` Every time (Garante reautenticação contínua para sessões de alto risco).
+    *   `Sign-in frequency:` Every time
 *   **State:** `Report-only` (Para fins de auditoria e validação).
  
     <img width="662" height="860" alt="image" src="https://github.com/user-attachments/assets/1ec95718-415d-4eb3-8b9a-233f258e9b65" />
