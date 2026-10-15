@@ -25,7 +25,7 @@ Esta política é projetada para remediar o risco de usuários cujas credenciais
     *   **User Risk:** High.
 *   **Access Controls (Grant):**
     *   `Require risk remediation` (Força a alteração segura da senha).
-    *   `Require authentication strength` Nível **Passwordless MFA** (Exige métodos de autenticação multifator robustos). -
+    *   `Require authentication strength` Nível **Passwordless MFA** (Exige métodos de autenticação multifator robustos). 
 *   **Session Controls:**
     *   `Sign-in frequency:` Every time (Garante reautenticação contínua para sessões de alto risco).
 *   **State:** `Report-only` (Para fins de auditoria e validação).
@@ -35,16 +35,9 @@ Esta política é projetada para remediar o risco de usuários cujas credenciais
 
 ### 2. CA02-Global-IdentityProtection-SignInRisk-High-Block
 
-*(Nota: Adicione aqui os detalhes específicos de como você configurou a política de "Sign-in Risk" para completar a documentação).*
-
-*   **Exemplo de Configuração Esperada:**
-*   **Assignments:** All users / All cloud apps. (Excluindo contas Break-Glass).
-
-    *   **Conditions:** Sign-in Risk: High.
-
-    *   **Access Controls (Grant):** Block access.
-
-    *   **State:** Report-only.
+**Assignments:** All users / All cloud apps. (Excluindo contas Break-Glass).
+*   **Conditions -> Sign-in Risk:** High.
+*   **Access Controls (Grant):** `Block access` (Bloqueia preventivamente a tentativa de entrada até que o risco seja investigado ou caia para um nível aceitável).
 
 ## 🛠️ Tecnologias Utilizadas
 
