@@ -16,7 +16,8 @@ Este repositório documenta a implementação de políticas de Conditional Acces
 
 ## ⚙️ Políticas Implementadas
 
-### 1. Require trade password for risky users (User Risk Mitigation)
+### 1. CA01-Global-IdentityProtection-UserRisk-High-RequirePasswordReset
+
 
 Esta política é projetada para remediar o risco de usuários cujas credenciais podem ter sido vazadas ou comprometidas (User Risk).
 
@@ -31,7 +32,7 @@ Esta política é projetada para remediar o risco de usuários cujas credenciais
     *   `Sign-in frequency:` Every time (Garante reautenticação contínua para sessões de alto risco).
 *   **State:** `Report-only` (Para fins de auditoria e validação).
 
-### 2. Bloquear acesso para Sign-in-Risk High (Sign-in Risk Mitigation)
+### 2. CA02-Global-IdentityProtection-SignInRisk-High-Block
 
 *(Nota: Adicione aqui os detalhes específicos de como você configurou a política de "Sign-in Risk" para completar a documentação).*
 
