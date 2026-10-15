@@ -9,7 +9,6 @@ Este repositório documenta a implementação de políticas de Conditional Acces
 
 ## 🎯 Objetivos do Projeto
 
-*   **Zero Trust Architecture:** Aplicar os princípios de "Verify Explicitly" e "Assume Breach" através do monitoramento contínuo de risco.
 *   **Mitigação Automatizada:** Responder imediatamente a eventos de "User Risk" elevado, exigindo remediação sem intervenção manual do administrador.
 *   **Proteção de Identidade:** Bloquear acesso ou forçar reautenticação forte (MFA) e redefinição de senha segura para contas potencialmente comprometidas.
 *   **Validação Segura:** Utilizar o modo `Report-only` para avaliar o impacto das políticas nos logs de auditoria antes da aplicação (enforcement).
