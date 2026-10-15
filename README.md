@@ -40,6 +40,9 @@ Esta política é projetada para remediar o risco de usuários cujas credenciais
     *   **Sign-in Risk:** High.
     **Access Controls (Grant):** `Block access`
     *   **Session Controls:** `Sign-in frequency: Every time`
+ 
+    *   <img width="662" height="860" alt="image" src="https://github.com/user-attachments/assets/1ec95718-415d-4eb3-8b9a-233f258e9b65" />
+
 
 ## 🛠️ Tecnologias Utilizadas
 
