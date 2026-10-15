@@ -22,13 +22,17 @@ Este repositório documenta a implementação de políticas de Conditional Acces
 Esta política é projetada para remediar o risco de usuários cujas credenciais podem ter sido vazadas ou comprometidas (User Risk).
 
 *   **Assignments:** All users / All cloud apps. (Excluindo contas Break-Glass).
+
 *   **Conditions:**
     *   **User Risk:** High.
+
 *   **Access Controls (Grant):**
     *   `Require risk remediation` (Força a alteração segura da senha).
     *   `Require authentication strength` (Exige métodos de autenticação multifator robustos, mitigando ataques de *password spray* ou *credential stuffing*).
+
 *   **Session Controls:**
     *   `Sign-in frequency:` Every time (Garante reautenticação contínua para sessões de alto risco).
+
 *   **State:** `Report-only` (Para fins de auditoria e validação).
 
 ### 2. CA02-Global-IdentityProtection-SignInRisk-High-Block
