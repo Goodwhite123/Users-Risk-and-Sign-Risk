@@ -4,7 +4,7 @@ Este repositório documenta a implementação de políticas de Conditional Acces
 
 1.  **User Risk (Risco de Usuário):** Avalia a probabilidade de a *identidade* ter sido comprometida (ex: credenciais vazadas na internet/dark web). A mitigação ideal envolve forçar o usuário a provar quem é e alterar sua senha de forma segura.
 
-3.  **Sign-in Risk (Risco de Entrada):** Avalia a probabilidade de uma *autenticação específica* não ter sido originada pelo usuário legítimo em tempo real (ex: acesso via navegador anônimo, IP malicioso ou "viagem atípica"). A mitigação envolve bloquear a sessão ou exigir autenticação multifator (MFA) imediata.
+2.  **Sign-in Risk (Risco de Entrada):** Avalia a probabilidade de uma *autenticação específica* não ter sido originada pelo usuário legítimo em tempo real (ex: acesso via navegador anônimo, IP malicioso ou "viagem atípica"). A mitigação envolve bloquear a sessão ou exigir autenticação multifator (MFA) imediata.
 
 
 ## 🎯 Objetivos do Projeto
@@ -16,7 +16,6 @@ Este repositório documenta a implementação de políticas de Conditional Acces
 ## ⚙️ Políticas Implementadas
 
 ### 1. CA01-Global-IdentityProtection-UserRisk-High-RequirePasswordReset
-
 
 Esta política é projetada para remediar o risco de usuários cujas credenciais podem ter sido vazadas ou comprometidas (User Risk).
 
@@ -36,9 +35,10 @@ Esta política é projetada para remediar o risco de usuários cujas credenciais
 ### 2. CA02-Global-IdentityProtection-SignInRisk-High-Block
 
 *   **Assignments:** All users / All cloud apps. (Excluindo contas Break-Glass).
-*   **Conditions -> Sign-in Risk:** High.
-*   
-    **Access Controls (Grant):** `Block access`
+*   **Conditions:**
+    *   **Sign-in Risk:** High.
+*   **Access Controls (Grant):**
+    *   `Block access`
 *   **Session Controls:**
     *   `Sign-in frequency:` Every time
 *   **State:** `Report-only` (Para fins de auditoria e validação).
