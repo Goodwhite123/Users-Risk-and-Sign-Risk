@@ -32,6 +32,9 @@ Esta política atua em tempo real contra tentativas de login anômalas ou vindas
 *   **Conditions -> Sign-in Risk:** High.
 *   **Access Controls (Grant):** `Block access` (Bloqueia preventivamente a tentativa de entrada até que o risco seja investigado ou caia para um nível aceitável).
 
+  <img width="661" height="778" alt="image" src="https://github.com/user-attachments/assets/ab7a7ca9-10ba-45fd-8934-bfe152743f22" />
+
+
 ## 🛠️ Tecnologias Utilizadas
 
 *   Microsoft Entra ID (Azure AD)
