@@ -2,6 +2,11 @@
 
 Este repositório documenta a implementação de políticas de Conditional Access no Microsoft Entra ID focadas na mitigação automatizada de riscos de identidade, utilizando sinais do **Identity Protection**. O objetivo principal é proteger o ambiente contra contas comprometidas através de respostas automatizadas e exigências rigorosas de autenticação.
 
+1.  **User Risk (Risco de Usuário):** Avalia a probabilidade de a *identidade* ter sido comprometida (ex: credenciais vazadas na internet/dark web). A mitigação ideal envolve forçar o usuário a provar quem é e alterar sua senha de forma segura.
+
+3.  **Sign-in Risk (Risco de Entrada):** Avalia a probabilidade de uma *autenticação específica* não ter sido originada pelo usuário legítimo em tempo real (ex: acesso via navegador anônimo, IP malicioso ou "viagem atípica"). A mitigação envolve bloquear a sessão ou exigir autenticação multifator (MFA) imediata.
+
+
 ## 🎯 Objetivos do Projeto
 
 *   **Zero Trust Architecture:** Aplicar os princípios de "Verify Explicitly" e "Assume Breach" através do monitoramento contínuo de risco.
