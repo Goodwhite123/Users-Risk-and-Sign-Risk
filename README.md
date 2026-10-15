@@ -1,14 +1,54 @@
-# 🛡️ Entra ID Identity Protection & Conditional Access
+# 🛡️ Entra ID Identity Protection: High-Risk User Mitigation
 
-Este repositório documenta a implementação de políticas de Conditional Access no Microsoft Entra ID para mitigação automatizada de riscos de identidade (*User e Sign-in Risk*), como credenciais vazadas e viagem impossível, integrando sinais do **Identity Protection** ao ambiente corporativo.
+Este repositório documenta a implementação de políticas de Conditional Access no Microsoft Entra ID focadas na mitigação automatizada de riscos de identidade, utilizando sinais do **Identity Protection**. O objetivo principal é proteger o ambiente contra contas comprometidas através de respostas automatizadas e exigências rigorosas de autenticação.
 
-## 🎯 Objetivo do Projeto
+## 🎯 Objetivos do Projeto
 
-O objetivo deste laboratório é demonstrar a configuração de uma arquitetura de acesso seguro baseada nos princípios de **Zero Trust**, garantindo a proteção das identidades e remediando ameaças em tempo real sem comprometer a disponibilidade do ambiente.
+*   **Zero Trust Architecture:** Aplicar os princípios de "Verify Explicitly" e "Assume Breach" através do monitoramento contínuo de risco.
+*   **Mitigação Automatizada:** Responder imediatamente a eventos de "User Risk" elevado, exigindo remediação sem intervenção manual do administrador.
+*   **Proteção de Identidade:** Bloquear acesso ou forçar reautenticação forte (MFA) e redefinição de senha segura para contas potencialmente comprometidas.
+*   **Validação Segura:** Utilizar o modo `Report-only` para avaliar o impacto das políticas nos logs de auditoria antes da aplicação (enforcement).
 
-## ⚙️ Tecnologias e Recursos Utilizados
+## ⚙️ Políticas Implementadas
 
-* **Microsoft Entra ID (P2)**
-* **Identity Protection:** Avaliação de risco em tempo real.
-* **Conditional Access:** Políticas baseadas em risco.
-* **Authentication Strengths:** Exigência de métodos de autenticação robustos (ex: Microsoft Authenticator ou FIDO2)
+### 1. Require trade password for risky users (User Risk Mitigation)
+
+Esta política é projetada para remediar o risco de usuários cujas credenciais podem ter sido vazadas ou comprometidas (User Risk).
+
+*   **Target:** Todos os usuários (`All users`).
+*   **Target Resources:** Todos os aplicativos em nuvem (`All cloud apps`).
+*   **Conditions:**
+    *   **User Risk:** High.
+*   **Access Controls (Grant):**
+    *   `Require risk remediation` (Força a alteração segura da senha).
+    *   `Require authentication strength` (Exige métodos de autenticação multifator robustos, mitigando ataques de *password spray* ou *credential stuffing*).
+*   **Session Controls:**
+    *   `Sign-in frequency:` Every time (Garante reautenticação contínua para sessões de alto risco).
+*   **State:** `Report-only` (Para fins de auditoria e validação).
+
+### 2. Bloquear acesso para Sign-in-Risk High (Sign-in Risk Mitigation)
+
+*(Nota: Adicione aqui os detalhes específicos de como você configurou a política de "Sign-in Risk" para completar a documentação).*
+
+*   **Exemplo de Configuração Esperada:**
+    *   **Target:** All users.
+    *   **Target Resources:** All cloud apps.
+    *   **Conditions:** Sign-in Risk: High.
+    *   **Access Controls (Grant):** Block access.
+    *   **State:** Report-only.
+
+## 🛠️ Tecnologias Utilizadas
+
+*   Microsoft Entra ID (Azure AD)
+*   Microsoft Entra ID Protection
+*   Conditional Access Policies
+*   Multifactor Authentication (MFA) Authentication Strengths
+
+## 📈 Impacto e Benefícios
+
+*   Redução drástica do tempo de resposta a incidentes de identidade.
+*   Proteção proativa contra acesso não autorizado usando credenciais vazadas.
+*   Conformidade com os padrões de segurança modernos focados em identidade como perímetro primário.
+
+---
+*Este laboratório prático faz parte do meu desenvolvimento contínuo em segurança de nuvem e arquitetura de identidade corporativa.*
