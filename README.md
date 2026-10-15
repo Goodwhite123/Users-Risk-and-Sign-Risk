@@ -26,7 +26,7 @@ Esta política é projetada para remediar o risco de usuários cujas credenciais
     *   **User Risk:** High.
 *   **Access Controls (Grant):**
     *   `Require risk remediation` (Força a alteração segura da senha).
-    *   `Require authentication strength` (Exige métodos de autenticação multifator robustos.
+    *   `Require authentication strength` Nível **Passwordless MFA** (Exige métodos de autenticação multifator robustos). -
 *   **Session Controls:**
     *   `Sign-in frequency:` Every time (Garante reautenticação contínua para sessões de alto risco).
 *   **State:** `Report-only` (Para fins de auditoria e validação).
