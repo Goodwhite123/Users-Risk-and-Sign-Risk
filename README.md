@@ -5,7 +5,8 @@
 Uma arquitetura de segurança robusta precisa tratar diferentes tipos de ameaças de forma distinta. Este laboratório implementa políticas separadas para os dois tipos de risco avaliados pelo Entra ID:
 
 1.  **User Risk (Risco de Usuário):** Avalia a probabilidade de a *identidade* ter sido comprometida (ex: credenciais vazadas na internet/dark web). A mitigação ideal envolve forçar o usuário a provar quem é e alterar sua senha de forma segura.
-2.  **Sign-in Risk (Risco de Entrada):** Avalia a probabilidade de uma *autenticação específica* não ter sido originada pelo usuário legítimo em tempo real (ex: acesso via navegador anônimo, IP malicioso ou "viagem impossivel"). A mitigação envolve bloquear a sessão ou exigir autenticação multifator (MFA) imediata.
+
+3.  **Sign-in Risk (Risco de Entrada):** Avalia a probabilidade de uma *autenticação específica* não ter sido originada pelo usuário legítimo em tempo real (ex: acesso via navegador anônimo, IP malicioso ou "viagem impossivel"). A mitigação envolve bloquear a sessão ou exigir autenticação multifator (MFA) imediata.
 
 ## ⚙️ Arquitetura das Políticas
 
