@@ -37,6 +37,7 @@ Esta política é projetada para remediar o risco de usuários cujas credenciais
 
 *   **Assignments:** All users / All cloud apps. (Excluindo contas Break-Glass).
 *   **Conditions -> Sign-in Risk:** High.
+*   
     **Access Controls (Grant):** `Block access`
     *   **Session Controls:** `Sign-in frequency: Every time`
  
