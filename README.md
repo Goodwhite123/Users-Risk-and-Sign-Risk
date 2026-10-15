@@ -30,6 +30,9 @@ Esta política é projetada para remediar o risco de usuários cujas credenciais
     *   `Sign-in frequency:` Every time (Garante reautenticação contínua para sessões de alto risco).
 *   **State:** `Report-only` (Para fins de auditoria e validação).
 
+  <img width="792" height="858" alt="image" src="https://github.com/user-attachments/assets/352aaabb-8eb6-4bc2-8c9f-0bc1d74e692d" />
+
+
 ### 2. CA02-Global-IdentityProtection-SignInRisk-High-Block
 
 *(Nota: Adicione aqui os detalhes específicos de como você configurou a política de "Sign-in Risk" para completar a documentação).*
