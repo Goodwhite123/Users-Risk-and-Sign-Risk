@@ -22,6 +22,9 @@ Esta política atua sobre contas potencialmente vazadas, forçando a remediaçã
     *   `Require authentication strength` (Exige métodos de MFA fortes, barrando *credential stuffing*).
 *   **Session Controls:** `Sign-in frequency: Every time` (Garante que sessões não sejam reaproveitadas).
 
+  <img width="660" height="752" alt="image" src="https://github.com/user-attachments/assets/b287c3f5-c23d-40e6-b54d-2609ab4be6bb" />
+
+
 ### 2. Bloquear acesso para Sign-in-Risk High (Foco em Sign-in Risk)
 Esta política atua em tempo real contra tentativas de login anômalas ou vindas de fontes maliciosas conhecidas.
 
