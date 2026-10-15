@@ -21,8 +21,7 @@ Este repositório documenta a implementação de políticas de Conditional Acces
 
 Esta política é projetada para remediar o risco de usuários cujas credenciais podem ter sido vazadas ou comprometidas (User Risk).
 
-*   **Target:** Todos os usuários (`All users`).  (Excluindo contas Break-Glass).
-*   **Target Resources:** Todos os aplicativos em nuvem (`All cloud apps`).
+*   **Assignments:** All users / All cloud apps. (Excluindo contas Break-Glass).
 *   **Conditions:**
     *   **User Risk:** High.
 *   **Access Controls (Grant):**
@@ -37,8 +36,7 @@ Esta política é projetada para remediar o risco de usuários cujas credenciais
 *(Nota: Adicione aqui os detalhes específicos de como você configurou a política de "Sign-in Risk" para completar a documentação).*
 
 *   **Exemplo de Configuração Esperada:**
-    *   **Target:** All users.
-    *   **Target Resources:** All cloud apps.
+*   **Assignments:** All users / All cloud apps. (Excluindo contas Break-Glass).
     *   **Conditions:** Sign-in Risk: High.
     *   **Access Controls (Grant):** Block access.
     *   **State:** Report-only.
