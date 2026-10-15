@@ -1,7 +1,5 @@
 # 🛡️ Entra ID Identity Protection: Mitigação de Risco com Conditional Access
 
-Este repositório documenta a implementação de políticas de Conditional Access no Microsoft Entra ID focadas na mitigação automatizada de riscos de identidade. O projeto utiliza sinais do **Identity Protection** para proteger o ambiente corporativo aplicando os princípios de Zero Trust ("Verify Explicitly" e "Assume Breach").
-
 ## 🧠 Conceitos Aplicados: User Risk vs. Sign-in Risk
 
 Uma arquitetura de segurança robusta precisa tratar diferentes tipos de ameaças de forma distinta. Este laboratório implementa políticas separadas para os dois tipos de risco avaliados pelo Entra ID:
