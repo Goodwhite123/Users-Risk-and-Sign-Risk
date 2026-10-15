@@ -35,9 +35,9 @@ Esta política é projetada para remediar o risco de usuários cujas credenciais
 
 ### 2. CA02-Global-IdentityProtection-SignInRisk-High-Block
 
-**Assignments:** All users / All cloud apps. (Excluindo contas Break-Glass).
-*   **Conditions -> Sign-in Risk:** High.
-*   **Access Controls (Grant):** `Block access` (Bloqueia preventivamente a tentativa de entrada até que o risco seja investigado ou caia para um nível aceitável).
+*   **Assignments:** All users / All cloud apps. (Excluindo contas Break-Glass).
+*   **Conditions:**
+    *   **Sign-in Risk:** High.
 
 ## 🛠️ Tecnologias Utilizadas
 
